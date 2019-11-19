@@ -443,8 +443,10 @@ void PlayerTurn(std::vector<Player*> p, Dices dices, int i){
     //inputti string muutetaan intiksi ja tarkastetaan ettei tulospaikkaa ole jo täytetty
     while(chosen <= -1 || chosen >= 16){        
         std::cout << "Choose 1-16 where points go: ";
-        std::string input_str = "";
-        std::string temp_str = "";
+        std::string input_str;
+        input_str = "";
+        std::string temp_str;
+        temp_str = "";
         std::cin >> input_str;
 
         if(std::isdigit(input_str[0])){
@@ -455,7 +457,7 @@ void PlayerTurn(std::vector<Player*> p, Dices dices, int i){
                 temp_str += input_str[1];
             }
             
-            //lopuksi intiksi
+            //finally convert string to int
             chosen = std::stoi(temp_str);
         }
         else{
