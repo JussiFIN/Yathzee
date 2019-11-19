@@ -441,7 +441,7 @@ void PlayerTurn(std::vector<Player*> p, Dices dices, int i){
     int chosen = -1;
 
     //inputti string muutetaan intiksi ja tarkastetaan ettei tulospaikkaa ole jo täytetty
-    while(chosen <= -1){        
+    while(chosen <= -1 || chosen >= 16){        
         std::cout << "Choose 1-16 where points go: ";
         std::string input_str = "";
         std::string temp_str = "";
