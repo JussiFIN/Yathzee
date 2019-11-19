@@ -22,7 +22,7 @@ std::array<int, 5> SortDicesDescending(std::array<int, 5> d_array){
     }
     return new_dices;
 }
-//puts -1 to scoreboard to mark what shows score place is already used
+//puts -1 to scoreboard to mark what score place is already used
 int markNotEmpty(int& v){
     if(v == 0)
         return -1;
