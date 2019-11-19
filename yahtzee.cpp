@@ -414,7 +414,7 @@ class Dices{
                     dice_array[i] = rollDice();
                 }
             }
-            //jos kaikki nopat on lukittu ei enää heitetä seuraavalla vuorolla
+            //jos kaikki nopat on lukittu ei enää heitetä seuraavalla vuorolla 
             if(lock_word == "KKKKK"){
                 return 2;
             }
